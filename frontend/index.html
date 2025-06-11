@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Dynamic Store</h1>
+            <div class="user-selector">
+                <input type="text" id="session-id-input" placeholder="Enter session_id...">
+                <button id="change-user-btn">View as User</button>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for products...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <section id="recommendation-section">
+                <h2>Personalized For You (from Dataset)</h2>
+                <div id="recommendations-container" class="product-grid">
+                    <!-- Recommendations will be inserted here -->
+                </div>
+            </section>
+            <section id="search-results-section" class="hidden">
+                <h2>Search Results</h2>
+                <div id="search-results-container" class="product-grid">
+                    <!-- Search results will be inserted here -->
+                </div>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <section id="history-section">
+                <h2>User Action History</h2>
+                <ul id="history-log">
+                    <!-- User actions will be logged here -->
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html> 
